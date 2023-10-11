@@ -1,0 +1,34 @@
+/********************************************************/
+/*              Autor: Boris Gallego Ríos               */
+/*       stylesheet for Black Mirror tribute site       */
+/*                    Version: 1.0                      */
+/*   comment: project for Lenguajes de Marcas - 1ºDAM   */   
+/********************************************************/ 
+
+/*font face es para asignar una nueva fuente*/
+@font-face {
+    font-family: textonormal;
+    src: url(../fonts/CheyenneSans-Black.ttf);
+}
+@font-face {
+    font-family: Blackmirror;
+    src: url(../fonts/Fontspring-DEMO-proximanova-black.otf);
+}
+
+body{margin:0; padding:0; /*para eliminar espacio superior en body*/
+    background-color: #13131C;
+    color: #C5C5CB;
+    font-family: textonormal; /*este comando es para aplicar la fuente que hemos asignado antes a todo el body*/
+}
+
+h1 {
+    font-family: Blackmirror;
+    text-align: center;
+    color: #13131C;
+    text-shadow: 2px 2px 2px rgb(15, 11, 32);
+}
+
+#wrapper{background-color: #65656D; 
+width: 80%; /*el contenido de la pagina no llega de punta a punta*/
+margin:auto; /*se centra el contenido en el centro de la página*/
+        }
