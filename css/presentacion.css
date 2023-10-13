@@ -30,7 +30,14 @@ header{
     margin-right: 10px;
 }
 
-
+.imagen{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.imagen img{
+    width: 700px;
+}
 
 #xd{
     
