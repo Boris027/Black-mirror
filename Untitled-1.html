@@ -6,6 +6,12 @@
     <title>Probando cajas</title>
     <!--vamos a trabajar cosas simples de css relativas al texto-->
     <style>
+        #wrapper{
+            width: 80%; 
+            margin:auto;
+            border:1px solid grey;
+            padding: 10vw;
+        }
         h1 {/*border:5px solid red;
             border-radius: 20px;*/
         text-align: center;
@@ -16,17 +22,33 @@
         }
 
         #p1 {border-left: 10px solid red;
-        background-color: aqua;}
+        background-color: aqua;
+    
+        /*padding:20px 25px 25px 25px/* /*esto sirve para el espaciado*/
+        margin:5vw;
+        /*tambien podria ser padding:10vw
+        tambien se puede utilizar margin para poner separaciones */
+        }
+
         #p2{border-bottom: 2px dotted navy;}
         #p3 {border:5px solid red;
             border-radius: 50%;}
+
+        #textosombra{
+            text-shadow: 5px 5px 5px yellowgreen,
+        -5px 5px 5px yellowgreen,
+        5px -5px 5px yellowgreen,
+        -5px -5px 5px yellowgreen 
+        }
     </style>
 </head>
 <body>
-    
+    <div id="wrapper">
     <h1>Lorem Ipsum dolor sit amet</h1>
     <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti delectus aut numquam qui blanditiis iusto molestias exercitationem ut fuga, aliquid ducimus. Saepe, voluptate culpa. Ea non officiis a vitae doloribus.</p>
     <p id="p2">Lorem ipsum</p>
     <p id="p3">Lorem ipsum</p>
+    <h2 id="textosombra">Presentacion</h2>
+</div>
 </body>
 </html>

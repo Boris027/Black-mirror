@@ -27,6 +27,24 @@ h1 {
     color: #13131C;
     text-shadow: 2px 2px 2px rgb(15, 11, 32);
 }
+#hero{
+    background-image: url(../img/black-mirror-1.jpg);
+    background-size: cover;
+    height: 90vh;
+}
+
+#hero button {
+    margin-top:80vh; /*en funcion del alto*/
+margin-left:10vw;  /*en funcion del ancho */
+border:none; /*le quita el borde*/
+font-weight: bold;
+font-size: 0.8em; /*tamaño de la letra*/
+padding:5px 15px; /*espaciado dentro del boton*/
+border-radius: 10px;
+background-color: white;
+}
+
+#hero button:hover {background-color: aqua;} /*color poner el raton encima del boton*/
 
 #wrapper{background-color: #65656D; 
 width: 80%; /*el contenido de la pagina no llega de punta a punta*/
