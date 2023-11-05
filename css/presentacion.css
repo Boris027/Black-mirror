@@ -39,70 +39,32 @@ header{
     width: 700px;
 }
 
-#xd{
-    
-text-align: center;
-margin-bottom: 100px;
-}
-#paleta{
-    margin-top: 100px;
+
+
+
+
+
+
+#Wrapper{
+    margin:auto;
+    width: 100%;
     text-align: center;
-    margin-bottom: 100px;
-}
-
-.paletasjuntas{
-    display: flex;
-    justify-content: center;
-}
-
-.paletacolores1{
-    height: 450px;
-    width: 450px;
-    border:4px solid black;
-    border-radius: 50%;
-    background-color: white;
-    margin-left: 50px;
+    
     
 }
-
-
-
-.paletacolores2{
-    height: 450px;
-    width: 450px;
-    border: 4px solid black;
-    border-radius: 50%;
-    background-color:#C4080A;
-    margin-left: 50px;
+#hero{
+    background-image: url(../img/Flash.jpg);
+    background-size: cover;
+    background-position: right;
+    height: 90vh;
 }
 
-.paletacolores3{
-    height: 450px;
-    width: 450px;
-    border: 4px solid black;
-    border-radius: 50%;
-    background-color: rgb(238, 255, 0);
-    margin-left: 50px;
-}
+#hero h1{
+    text-align: center;
+    transform:translate(-50%,-50%);
+    position: absolute;
+    color: #ffffff;
+    left: 50%;
+    top: 50%;
 
-
-
-
-
-
-
-
-
-
-
-.pie{
-    display: flex;
-    align-items: center;
-}
-
-.pie img{
-    height: 600px;
-    width: 10000px;
-    padding: 0px;
-    margin-top: 200px;
 }
