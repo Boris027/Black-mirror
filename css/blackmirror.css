@@ -28,14 +28,22 @@ h1 {
     text-shadow: 2px 2px 2px rgb(15, 11, 32);
 }
 #hero{
-    background-image: url(../img/black-mirror-1.jpg);
-    background-size: cover;
-    height: 90vh;
+    background-image: url(../img/black-mirror-1.jpg); /*imagen apaisada a buena calidad*/
+    background-size: cover; /*cubre todo el ancho*/
+    height: 90vh; /*90% del alto de la ventana*/
+    background-position: right;
+    
+
+    position:relative; /*contenedor del boton, mi hero section*/
 }
 
 #hero button {
-    margin-top:80vh; /*en funcion del alto*/
-margin-left:10vw;  /*en funcion del ancho */
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    /*margin-top:80vh; /*en funcion del alto*/ /*
+margin-left:10vw;  /*en funcion del ancho */ 
 border:none; /*le quita el borde*/
 font-weight: bold;
 font-size: 0.8em; /*tamaño de la letra*/
@@ -50,3 +58,10 @@ background-color: white;
 width: 80%; /*el contenido de la pagina no llega de punta a punta*/
 margin:auto; /*se centra el contenido en el centro de la página*/
         }
+
+
+
+        /*Responsividad*/
+@media only screen and (width<900px){
+    #wrapper {width: 100%;}
+}
