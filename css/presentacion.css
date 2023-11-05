@@ -66,5 +66,28 @@ header{
     color: #ffffff;
     left: 50%;
     top: 50%;
+    font-size:1.8em ;
 
+}
+#hero button{
+    transform:translate(-50%,-50%);
+    position: absolute;
+    top: 61%;
+    left: 50%;
+    border-radius: 18px;
+    border:none;
+    padding:10px 30px;
+    font-size:1.8em ;
+    
+}
+#hero button:hover {background-color: #C4080A;}
+
+@media only screen and (width<1000px){
+    #hero h1{font-size: 1.5em;}
+    #hero button {font-size:1em ;}
+}
+
+@media only screen and (width<700px){
+    #hero h1{font-size: 1em;}
+    #hero button {font-size:0.8em ;}
 }
