@@ -100,8 +100,8 @@ header{
     margin-top: 100px;
     text-align: center;
     border-bottom: #C4080A solid  5px;
-    margin-left: 40%;
-    margin-right: 40%;
+    margin-left: 35%;
+    margin-right: 35%;
     
 }
 #section1 p{
@@ -114,12 +114,13 @@ header{
     #hero h1{font-size: 1.5em;}
     #hero button {font-size:1em ;}
     #section1 img{width: 20vw; margin-left: -5%;}
+    #section1 h1{margin-left: 20%; margin-right: 20%;}
 }
 
 @media only screen and (width<700px){
     #hero h1{font-size: 1em;}
     #hero button {font-size:0.8em ;}
-    #section1 img{width: 20vw; margin-left: 30%; margin-top: 40vw;}
-
+    #section1 img{width: 20vw; margin-left: 30%; margin-top: 40vw; }
+    #section1 h1{margin-left: 5%; margin-right: 5%;}
     
 }
