@@ -1,6 +1,7 @@
 body{
     margin: 0; padding: 0;
     font-family: sans-serif;
+    background-color: #C4080A;
 }
 
 a{
@@ -14,6 +15,7 @@ header{
     display: flex;
     height: 70px;
     background-color: #C4080A;
+    
     justify-content: space-between;
     align-items: center;
     padding: 10px;
@@ -57,6 +59,8 @@ header{
     background-size: cover;
     background-position: right;
     height: 95vh;
+    border-bottom: 20px solid rgb(0, 0, 0);
+    
 }
 
 #hero h1{
@@ -74,8 +78,9 @@ header{
     position: absolute;
     top: 61%;
     left: 50%;
-    border-radius: 18px;
+    border-color: aqua;
     border:none;
+    border-radius: 20px;
     padding:10px 30px;
     font-size:1.8em ;
     
@@ -83,20 +88,40 @@ header{
 #hero button:hover {background-color: #C4080A;}
 
 #wrapsecciones{
-    padding-top: 0%;
+    
+    border-radius: 10px;
+    text-align: center;
+    
     background-color: #ffffff;
     margin: auto;
-    width: 80%;
+    margin-top: 2%;
+    width: 70%;
+    border-bottom: 20px solid green;
+    
 }
+
+#wrapsecciones p{
+   margin-left: 10%;
+   margin-right: 10%;
+    
+}
+
+
 
 #section1 img{
-    position: absolute;
-    margin-left: 5vw;
-    margin-right: 90vw;
-    width: 15vw;
+    margin-top: 10px;
+    position: relative;
+    margin-bottom: -10px;
+    
+    
+    
+    width: 20%;
+    visibility: visible;
+
 }
 
-#section1 h1{
+#wrapsecciones h1{
+    padding-top: 4%;
     margin-top: 100px;
     text-align: center;
     border-bottom: #C4080A solid  5px;
@@ -110,17 +135,46 @@ header{
     
 }
 
+#section2 img{
+    position: relative;
+    width: 10%;
+}
+
+#pie{
+    margin-top: 1%;
+    border-top: 20px solid rgb(0, 0, 0);
+    background-image: url(../img/OIP.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 10vw;
+}
+
+#footer {
+    
+    width: 80%;
+    margin-left: 20%;
+}
+
+
+
+
+
+
+
 @media only screen and (width<1000px){
     #hero h1{font-size: 1.5em;}
-    #hero button {font-size:1em ;}
-    #section1 img{width: 20vw; margin-left: -5%;}
-    #section1 h1{margin-left: 20%; margin-right: 20%;}
+    #hero button {font-size:1em ;
+    }
+    #section1 img{width: 50%;}
+    #wrapsecciones h1{margin-left: 20%; margin-right: 20%;}
+    #wrapsecciones{width: 90%;}
+    #section2 img{width: 20%;}
 }
 
 @media only screen and (width<700px){
     #hero h1{font-size: 1em;}
     #hero button {font-size:0.8em ;}
-    #section1 img{width: 20vw; margin-left: 30%; margin-top: 40vw; }
+    
     #section1 h1{margin-left: 5%; margin-right: 5%;}
     
 }
