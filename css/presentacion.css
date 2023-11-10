@@ -19,8 +19,28 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    
+}
+#nav{
+    
+    position: absolute;
+    right: 2%;
+    visibility: visible;
 }
 
+#navlist li{
+    padding-top: 5px;
+}
+#navlist{
+    position: absolute;
+    visibility: hidden;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgb(119, 121, 130);
+    padding: 2rem;
+    box-shadow: 0 0 0 100vmax  rgba(0,0,0,.5);
+}
 .logo{
     display: flex;
     align-items: center;
@@ -122,7 +142,7 @@ header{
 
 #wrapsecciones h1{
     padding-top: 4%;
-    margin-top: 100px;
+    margin-top: ;
     text-align: center;
     border-bottom: #C4080A solid  5px;
     margin-left: 35%;
@@ -139,6 +159,37 @@ header{
     position: relative;
     width: 10%;
 }
+
+
+#section3 li{
+    
+    padding-top: 10%;
+    text-align: left;
+    
+}
+#section3 ul{
+    list-style-image: url(../img/rayo\ ul.png);
+    
+    margin-left: 35%;
+    margin-right: 35%;
+    
+}
+
+
+#section4{
+    
+    
+    
+}
+#section4 img{
+    
+    width: 20%;
+    
+}
+
+
+
+
 
 #pie{
     margin-top: 1%;
@@ -161,6 +212,7 @@ header{
 
 
 
+
 @media only screen and (width<1000px){
     #hero h1{font-size: 1.5em;}
     #hero button {font-size:1em ;
@@ -169,6 +221,9 @@ header{
     #wrapsecciones h1{margin-left: 20%; margin-right: 20%;}
     #wrapsecciones{width: 90%;}
     #section2 img{width: 20%;}
+    #section3 ul{margin-left: 20%; margin-right: 20%;}
+    #nav{visibility: hidden;}
+    #navlist{visibility: visible;}
 }
 
 @media only screen and (width<700px){
@@ -176,5 +231,6 @@ header{
     #hero button {font-size:0.8em ;}
     
     #section1 h1{margin-left: 5%; margin-right: 5%;}
-    
+    #section3 ul{margin-left: 10%; margin-right: 10%;}
+    #section4 img{width: 40%;}
 }
