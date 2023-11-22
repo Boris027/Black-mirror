@@ -15,6 +15,8 @@
     src: url(../fonts/Fontspring-DEMO-proximanova-black.otf);
 }
 
+*{box-sizing: border-box;} /*poner esto siempre*/
+
 body{margin:0; padding:0; /*para eliminar espacio superior en body*/
     background-color: #13131C;
     color: #C5C5CB;
@@ -54,14 +56,70 @@ background-color: white;
 
 #hero button:hover {background-color: aqua;} /*color poner el raton encima del boton*/
 
+
+
+
+
+
+/*intro section*/
+.grid-2{
+    display: grid;
+   
+}
+.col-2{
+    padding-left:10%;
+}
+#intro img{width: 60%;}
+
+#intro button{
+    border-radius: 10px;
+}
+#intro h1 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.col-4{
+margin-left: 20px;
+background-color: rgb(19, 218, 82);
+border-radius: 15px;
+margin-right: 20px;
+margin-bottom: 15px;
+}
+.col-4 img{
+    padding-top: 15px;
+    display: block;
+    margin: auto;
+}
+#sessions h3{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-align: center;
+    
+}
+#sessions img{
+    width: 90%;
+}
+.grid-4{
+    display: grid;
+    grid-template-columns: 100%;
+}
+
 #wrapper{background-color: #65656D; 
-width: 80%; /*el contenido de la pagina no llega de punta a punta*/
+width: 100%; /*el contenido de la pagina no llega de punta a punta*/
 margin:auto; /*se centra el contenido en el centro de la página*/
         }
 
 
 
         /*Responsividad*/
-@media only screen and (width<900px){
-    #wrapper {width: 100%;}
+@media only screen and (width>650px){
+    .grid-4{grid-template-columns: auto auto;} /*tambien se puede poner 50% y 50%  */
 }
+
+@media only screen and (width>900px){
+    #wrapper {width: 80%;}
+    .grid-2{grid-template-columns: 50% 50%;}
+    .grid-4{grid-template-columns: auto auto auto auto;} /*tambien se puede poner auto auto auto auto */
+}
+
